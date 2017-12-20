@@ -13,10 +13,8 @@
     pass
     texlive.combined.scheme-full
     oraclejre8
-    minecraft
     vlc
     chromium
-    steam
     acpi
     cabal-install ghc cabal2nix
   ];

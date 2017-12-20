@@ -13,6 +13,7 @@
       ../../hardware/thinkpad.nix
       ../../users/uwap.nix
       ../../locales/de.nix
+      ../../games.nix
     ];
 
   # Use the GRUB 2 boot loader.
