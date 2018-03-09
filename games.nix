@@ -8,6 +8,16 @@
       extraPkgs = pkgs: with pkgs; [
         # gtk3 required by screeps
         gnome3.gtk
+        zlib
+        dbus
+        freetype
+        glib
+        atk
+        cairo
+        gdk_pixbuf
+        pango
+        fontconfig
+        xorg.libxcb
       ];
     };
   };   
@@ -17,4 +27,6 @@
     steam
     steam-run
   ];
+
+  hardware.opengl.driSupport32Bit = true;
 }

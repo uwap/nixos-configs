@@ -16,6 +16,6 @@
   sound.mediaKeys.enable = true;
 
   environment.systemPackages = with pkgs; [
-    ncmpcpp
+    ncmpcpp mpc_cli
   ];
 }
