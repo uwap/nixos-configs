@@ -63,14 +63,18 @@
   services.xserver = {
     enable = true;
     videoDrivers = [ "intel" ];
-    displayManager.slim = {
+    displayManager.auto = {
       enable = true;
-      defaultUser = "kodi";
+      user = "kodi";
     };
+ #    displayManager.slim = {
+ #      enable = true;
+ #      defaultUser = "kodi";
+ #    };
     desktopManager.kodi.enable = true;
     desktopManager.default = "kodi";
-    windowManager.xmonad.enable = false;
-    windowManager.default = "none";
+ #   windowManager.xmonad.enable = false;
+ #   windowManager.default = "none";
   };
   hardware.opengl.driSupport32Bit = true;
   # services.xserver.xkbOptions = "eurosign:e";
