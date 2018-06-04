@@ -17,7 +17,7 @@
 
     # window manager (xmonad)
     windowManager.default = "xmonad";
-    windowManager.xmonad = {
+    windowManager.xmonad = lib.mkDefault {
       enable = true;
       enableContribAndExtras = true;
     };
@@ -54,7 +54,7 @@
     brightness.night = "0.5";
   };
 
-  services.compton = {
+  services.compton = lib.mkDefault {
     enable = true;
     backend = "glx";
     shadow = true;
