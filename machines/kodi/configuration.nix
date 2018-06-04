@@ -71,6 +71,7 @@
     desktopManager.kodi.enable = true;
     desktopManager.default = "kodi";
     windowManager.xmonad.enable = false;
+    windowManager.default = "none";
   };
   hardware.opengl.driSupport32Bit = true;
   # services.xserver.xkbOptions = "eurosign:e";
