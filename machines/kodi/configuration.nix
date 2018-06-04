@@ -78,7 +78,6 @@
       enable = true;
       defaultUser = "kodi";
     };
-    desktopManager.steam.enable = true;
     desktopManager.kodi.enable = true;
     windowManager.xmonad.enable = false;
   };
