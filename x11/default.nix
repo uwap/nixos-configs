@@ -30,7 +30,7 @@
     desktopManager.default = lib.mkDefault "none";
     desktopManager.xterm.enable = false;
 
-    xkbOptions = "compose:menu";
+    xkbOptions = lib.mkDefault "compose:menu";
   };
 
   # xmonad dependencies
