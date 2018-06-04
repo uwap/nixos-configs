@@ -25,16 +25,6 @@
   networking.hostName = "uwap-kodi"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
-  # Select internationalisation properties.
-  i18n = {
-    consoleFont = "Lat2-Terminus16";
-    consoleKeyMap = "de";
-    defaultLocale = "de_DE.UTF-8";
-  };
-
-  # Set your time zone.
-  time.timeZone = "Europe/Berlin";
-
   services.redshift.enable = false;
 
   # List packages installed in system profile. To search by name, run:
