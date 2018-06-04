@@ -11,8 +11,6 @@
       ../../client.nix
       ../../locales/de.nix
       ./hardware-configuration.nix
-      ./steam-wm.nix
-      ./kodi.nix
     ];
 
   # Use the GRUB 2 boot loader.
