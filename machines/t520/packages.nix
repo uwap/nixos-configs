@@ -12,6 +12,7 @@
     gnupg
     pass
     texlive.combined.scheme-full
+    git-latexdiff
     oraclejre8
     vlc
     chromium

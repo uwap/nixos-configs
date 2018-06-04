@@ -44,6 +44,7 @@
     conky
     kbdKeymaps.dvp
     xdotool
+    feh
   ];
 
   services.redshift = {
@@ -56,10 +57,18 @@
   services.compton = {
     enable = true;
     backend = "glx";
-    activeOpacity = "1";
-    inactiveOpacity = "0.7";
     shadow = true;
     fade = true;
     vSync = "opengl-swc";
+    activeOpacity = "1";
+    inactiveOpacity = "0.85";
+    opacityRules = [
+      "99:class_g = 'vlc'"
+      "99:_NET_WM_STATE@[0]:32a = '_NET_WM_STATE_FULLSCREEN'"
+      "99:_NET_WM_STATE@[1]:32a = '_NET_WM_STATE_FULLSCREEN'"
+      "99:_NET_WM_STATE@[2]:32a = '_NET_WM_STATE_FULLSCREEN'"
+      "99:_NET_WM_STATE@[3]:32a = '_NET_WM_STATE_FULLSCREEN'"
+      "99:_NET_WM_STATE@[4]:32a = '_NET_WM_STATE_FULLSCREEN'"
+    ];
   };
 }

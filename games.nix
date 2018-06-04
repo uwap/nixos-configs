@@ -18,6 +18,7 @@
         pango
         fontconfig
         xorg.libxcb
+        libudev
       ];
     };
   };   
