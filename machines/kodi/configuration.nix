@@ -49,7 +49,7 @@
 
   networking.firewall = {
     allowPing = true;
-    allowedTCPPorts = [ 80 8080 ];
+    allowedTCPPorts = [ 80 8080 9777 ];
     rejectPackets = true;
     extraCommands = "iptables -A PREROUTING -t nat -p tcp --dport 80 -j REDIRECT --to-port 8080"; 
   };
@@ -67,14 +67,10 @@
       enable = true;
       user = "kodi";
     };
- #    displayManager.slim = {
- #      enable = true;
- #      defaultUser = "kodi";
- #    };
     desktopManager.kodi.enable = true;
     desktopManager.default = "kodi";
- #   windowManager.xmonad.enable = false;
- #   windowManager.default = "none";
+    windowManager.xmonad.enable = false;
+    windowManager.default = "none";
   };
   hardware.opengl.driSupport32Bit = true;
   # services.xserver.xkbOptions = "eurosign:e";
