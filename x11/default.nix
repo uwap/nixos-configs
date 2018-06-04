@@ -47,7 +47,7 @@
     feh
   ];
 
-  services.redshift = {
+  services.redshift = lib.mkDefault {
     enable = true;
     latitude = "49.4883333";
     longitude = "8.4647222";
