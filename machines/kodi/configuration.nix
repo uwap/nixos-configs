@@ -35,7 +35,6 @@
   # Set your time zone.
   time.timeZone = "Europe/Berlin";
 
-  windowManager.xmonad.enable = false;
   services.redshift.enable = false;
 
   # List packages installed in system profile. To search by name, run:
@@ -81,6 +80,7 @@
     };
     desktopManager.steam.enable = true;
     desktopManager.kodi.enable = true;
+    windowManager.xmonad.enable = false;
   };
   hardware.opengl.driSupport32Bit = true;
   # services.xserver.xkbOptions = "eurosign:e";
