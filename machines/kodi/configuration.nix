@@ -62,7 +62,6 @@
   # Enable the X11 windowing system.
   services.xserver = {
     enable = true;
-    layout = "de";
     videoDrivers = [ "intel" ];
     displayManager.slim = {
       enable = true;
