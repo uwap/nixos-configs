@@ -69,6 +69,7 @@
       defaultUser = "kodi";
     };
     desktopManager.kodi.enable = true;
+    desktopManager.default = "kodi";
     windowManager.xmonad.enable = false;
   };
   hardware.opengl.driSupport32Bit = true;

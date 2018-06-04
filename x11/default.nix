@@ -16,7 +16,7 @@
     multitouch.enable = true;
 
     # window manager (xmonad)
-    windowManager.default = "xmonad";
+    windowManager.default = lib.mkDefault "xmonad";
     windowManager.xmonad = lib.mkDefault {
       enable = true;
       enableContribAndExtras = true;
@@ -27,7 +27,7 @@
       enable = true;
       user = "uwap";
     };
-    desktopManager.default = "none";
+    desktopManager.default = lib.mkDefault "none";
     desktopManager.xterm.enable = false;
 
     xkbOptions = "compose:menu";
