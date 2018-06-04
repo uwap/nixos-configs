@@ -8,6 +8,7 @@
 
   imports =
     [ # Include the results of the hardware scan.
+      ./kodi.nix
       ../../client.nix
       ../../locales/de.nix
       ./hardware-configuration.nix
@@ -49,7 +50,8 @@
 
   networking.firewall = {
     allowPing = true;
-    allowedTCPPorts = [ 80 8080 9777 ];
+    allowedTCPPorts = [ 80 8080 ];
+    allowedUDPPorts = [ 9777 ];
     rejectPackets = true;
     extraCommands = "iptables -A PREROUTING -t nat -p tcp --dport 80 -j REDIRECT --to-port 8080"; 
   };
@@ -67,8 +69,8 @@
       enable = true;
       user = "kodi";
     };
-    desktopManager.kodi.enable = true;
-    desktopManager.default = "kodi";
+    desktopManager.kodi2.enable = true;
+    desktopManager.default = "kodi2";
     windowManager.xmonad.enable = false;
     windowManager.default = "none";
   };
